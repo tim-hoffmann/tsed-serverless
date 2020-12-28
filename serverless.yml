@@ -1,0 +1,42 @@
+service: tsed-serverless
+
+plugins:
+  - serverless-webpack
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: eu-central-1
+  stage: ${opt:stage, 'dev'}
+  logRetentionInDays: 14
+  tracing:
+    apiGateway: true
+    lambda: true
+  environment:
+    STAGE: ${self:provider.stage}
+  apiGateway:
+    shouldStartNameWithService: true
+
+functions:
+  httpHandler:
+    handler: src/handlers/apiGateway/ApiGatewayHandler.handler
+    events:
+      - http:
+          method: any
+          path: /{proxy+}
+          cors: true
+      - http:
+          method: any
+          path: /
+          cors: true
+
+custom:
+  webpack:
+    webpackConfig: webpack.sls.config.js
+    includeModules:
+      forceExclude:
+        - aws-sdk
+        - '@types/multer'
+    packager: yarn
+    keepOutputDirectory: true
+    individually: true

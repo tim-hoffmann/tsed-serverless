@@ -12,7 +12,7 @@
     "start:bundle": "cross-env NODE_ENV=production node dist/app.bundle.js"
   },
   "dependencies": {
-    "@tsed/ajv": "^6.17.6",
+    "@tsed/ajv": "^6.18.3",
     "@tsed/common": "^6.17.6",
     "@tsed/core": "^6.17.6",
     "@tsed/di": "^6.17.6",

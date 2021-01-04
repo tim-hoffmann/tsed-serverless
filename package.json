@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@tsed/ajv": "^6.17.6",
-    "@tsed/common": "^6.17.6",
+    "@tsed/common": "^6.18.3",
     "@tsed/core": "^6.17.6",
     "@tsed/di": "^6.17.6",
     "@tsed/exceptions": "^6.17.6",

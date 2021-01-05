@@ -16,7 +16,7 @@
     "@tsed/common": "^6.19.0",
     "@tsed/core": "^6.19.0",
     "@tsed/di": "^6.19.0",
-    "@tsed/exceptions": "^6.19.0",
+    "@tsed/exceptions": "^6.19.1",
     "@tsed/json-mapper": "^6.19.0",
     "@tsed/platform-aws": "^6.19.0",
     "@tsed/platform-express": "^6.19.0",

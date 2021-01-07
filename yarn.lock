@@ -1306,6 +1306,15 @@
     source-map-support "0.5.19"
     tslib "2.0.1"
 
+"@tsed/core@6.19.2":
+  version "6.19.2"
+  resolved "https://registry.yarnpkg.com/@tsed/core/-/core-6.19.2.tgz#91bf4d0ee21396d4fe2f8d61bf541ffaaccf8eba"
+  integrity sha512-PygwnGv1m7+0tGhAjTSZYRFAsoCCD5Lfw34JkShy8SgfaKm7KgDnJFoFsCC6yCmLe9m+mA7wk1XvYIYo97U3pg==
+  dependencies:
+    reflect-metadata "^0.1.13"
+    source-map-support "0.5.19"
+    tslib "2.0.1"
+
 "@tsed/di@6.19.0", "@tsed/di@^6.19.0":
   version "6.19.0"
   resolved "https://registry.yarnpkg.com/@tsed/di/-/di-6.19.0.tgz#792cfa95ab90cd198b17b8d2bce515b4962d2e17"
@@ -1315,12 +1324,20 @@
     chalk "4.1.0"
     tslib "2.0.1"
 
-"@tsed/exceptions@6.19.0", "@tsed/exceptions@^6.19.0":
+"@tsed/exceptions@6.19.0":
   version "6.19.0"
   resolved "https://registry.yarnpkg.com/@tsed/exceptions/-/exceptions-6.19.0.tgz#322a23d2d6c395499dfe12441b59ca4c73bbb71c"
   integrity sha512-KUM6mSwSxPyHcMBsWkZvlLquD2s6Xm3o7tmRLakpNH5orASvCDBBlRY1jnqze4YeofuAH1ZuAr/30BQ7BiwNaA==
   dependencies:
     "@tsed/schema" "6.19.0"
+    tslib "2.0.1"
+
+"@tsed/exceptions@^6.19.2":
+  version "6.19.2"
+  resolved "https://registry.yarnpkg.com/@tsed/exceptions/-/exceptions-6.19.2.tgz#646b8518850f3af06a84d4bdfd8e7177b3b662ea"
+  integrity sha512-2roty/+VQ2feVWdgsxVltLfkLQzDYcHNbaDZSmpXpaXsXfMncszoIBmAsqH95EaeWYDeyauQYZcvAOPp4jdqZw==
+  dependencies:
+    "@tsed/schema" "6.19.2"
     tslib "2.0.1"
 
 "@tsed/json-mapper@6.19.0", "@tsed/json-mapper@^6.19.0":
@@ -1347,6 +1364,11 @@
   resolved "https://registry.yarnpkg.com/@tsed/openspec/-/openspec-6.19.0.tgz#0535327810fa2fcdb617464a701ec5adbc93ad49"
   integrity sha512-rLZZj3NUX8dCfyxMYdvXlwoMM9H7dK6esI7WWLB8yZc9g/1dZvC5nphrSxjCiTKiBm2dqg2YJWLAVu7G+zoHZg==
 
+"@tsed/openspec@6.19.2":
+  version "6.19.2"
+  resolved "https://registry.yarnpkg.com/@tsed/openspec/-/openspec-6.19.2.tgz#fe1648ae72a677ea362f385893b3a9d998a6ecee"
+  integrity sha512-Esd/6NQOddowIQre/a8pgll1gZ43Jhls/tjeZz7BCj5QZX8goN4hr+WuD24duRtp+STE6FSL9ndNAnilIZanng==
+
 "@tsed/platform-aws@^6.19.0":
   version "6.19.0"
   resolved "https://registry.yarnpkg.com/@tsed/platform-aws/-/platform-aws-6.19.0.tgz#a6032ec4b1037ca9e0020ffaa5b1b1849cbb39ee"
@@ -1363,13 +1385,24 @@
     express "^4.17.1"
     multer "^1.4.2"
 
-"@tsed/schema@6.19.0", "@tsed/schema@^6.19.0":
+"@tsed/schema@6.19.0":
   version "6.19.0"
   resolved "https://registry.yarnpkg.com/@tsed/schema/-/schema-6.19.0.tgz#94be9ead18ba62899248ab3ec71a85aa03912f97"
   integrity sha512-P4BpKmsk0lUaqk0eQU+qqBgOkL30aJNMshyAH7M7sfgek156OUDtvZMiV0ZFjy7hv88pEJjl3L+vT9QvYKMzWw==
   dependencies:
     "@tsed/core" "6.19.0"
     "@tsed/openspec" "6.19.0"
+    change-case "4.1.1"
+    micromatch "4.0.2"
+    tslib "2.0.1"
+
+"@tsed/schema@6.19.2", "@tsed/schema@^6.19.0":
+  version "6.19.2"
+  resolved "https://registry.yarnpkg.com/@tsed/schema/-/schema-6.19.2.tgz#53c743357c1dd2789c5b2422b0558b9dd93f7e80"
+  integrity sha512-bUv4TJYBx3u3I4HxlVQpB3d2ooHSBq1j9vWJ/7LBL+l2I8Lx4/3eOhYLPn3G7OcwxLROBdl9AIqYO2niD8q+Mw==
+  dependencies:
+    "@tsed/core" "6.19.2"
+    "@tsed/openspec" "6.19.2"
     change-case "4.1.1"
     micromatch "4.0.2"
     tslib "2.0.1"

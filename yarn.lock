@@ -1347,10 +1347,10 @@
   resolved "https://registry.yarnpkg.com/@tsed/openspec/-/openspec-6.19.0.tgz#0535327810fa2fcdb617464a701ec5adbc93ad49"
   integrity sha512-rLZZj3NUX8dCfyxMYdvXlwoMM9H7dK6esI7WWLB8yZc9g/1dZvC5nphrSxjCiTKiBm2dqg2YJWLAVu7G+zoHZg==
 
-"@tsed/platform-aws@^6.19.0":
-  version "6.19.0"
-  resolved "https://registry.yarnpkg.com/@tsed/platform-aws/-/platform-aws-6.19.0.tgz#a6032ec4b1037ca9e0020ffaa5b1b1849cbb39ee"
-  integrity sha512-ol+/UdXnXnx6rvSpTC9Ik3WuomJxc6AZGIIMy2NW9Ypl0daEX5wrQx7asPUXY6jecRg4yzwDdK2+/vPhpmP3WA==
+"@tsed/platform-aws@^6.20.0":
+  version "6.20.0"
+  resolved "https://registry.yarnpkg.com/@tsed/platform-aws/-/platform-aws-6.20.0.tgz#b7b56d5115cabcb945232f889d8b7bb3166e239f"
+  integrity sha512-zpW2dOueBWAIxtq57wPAxgvLwgsiZZkaeGNw/QgAt1QolsHeoyE+lY6kgwsmFS8dylHNVkXj85nawE6b0h8mJg==
   dependencies:
     "@types/aws-serverless-express" "^3.3.3"
     aws-serverless-express "3.3.8"

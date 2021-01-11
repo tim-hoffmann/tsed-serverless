@@ -1347,13 +1347,13 @@
   resolved "https://registry.yarnpkg.com/@tsed/openspec/-/openspec-6.19.0.tgz#0535327810fa2fcdb617464a701ec5adbc93ad49"
   integrity sha512-rLZZj3NUX8dCfyxMYdvXlwoMM9H7dK6esI7WWLB8yZc9g/1dZvC5nphrSxjCiTKiBm2dqg2YJWLAVu7G+zoHZg==
 
-"@tsed/platform-aws@^6.19.0":
-  version "6.19.0"
-  resolved "https://registry.yarnpkg.com/@tsed/platform-aws/-/platform-aws-6.19.0.tgz#a6032ec4b1037ca9e0020ffaa5b1b1849cbb39ee"
-  integrity sha512-ol+/UdXnXnx6rvSpTC9Ik3WuomJxc6AZGIIMy2NW9Ypl0daEX5wrQx7asPUXY6jecRg4yzwDdK2+/vPhpmP3WA==
+"@tsed/platform-aws@^6.20.1":
+  version "6.20.1"
+  resolved "https://registry.yarnpkg.com/@tsed/platform-aws/-/platform-aws-6.20.1.tgz#72ad9e0d9fa6bc6bd11a1eb002284b177ff99ee5"
+  integrity sha512-2VgaVbQQ5oKLM3CE9qLw3dHInMB5ai158TtFKCMbBdA8/qE9DBn/ILn5LXYZz0vp/TN6+E85Dnio/Jc+x8j5Vw==
   dependencies:
     "@types/aws-serverless-express" "^3.3.3"
-    aws-serverless-express "3.3.8"
+    aws-serverless-express "3.4.0"
 
 "@tsed/platform-express@^6.19.0":
   version "6.19.0"
@@ -1584,6 +1584,14 @@
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/tough-cookie/-/tough-cookie-4.0.0.tgz#fef1904e4668b6e5ecee60c52cc6a078ffa6697d"
   integrity sha512-I99sngh224D0M7XgW1s120zxCt3VYQ3IQsuw3P3jbq5GG4yc79+ZjyKznyOGIQrflfylLgcfekeZW/vk0yng6A==
+
+"@vendia/serverless-express@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@vendia/serverless-express/-/serverless-express-3.4.0.tgz#156f47d364b067ae6fa678a914c51887f494321a"
+  integrity sha512-/UAAbi9qRjUtjRISt5MJ1sfhtrHb26hqQ0nvE5qhMLsAdR5H7ErBwPD8Q/v2OENKm0iWsGwErIZEg7ebUeFDjQ==
+  dependencies:
+    binary-case "^1.0.0"
+    type-is "^1.6.16"
 
 "@webassemblyjs/ast@1.9.1":
   version "1.9.1"
@@ -2083,11 +2091,12 @@ aws-sdk@^2.819.0:
     uuid "3.3.2"
     xml2js "0.4.19"
 
-aws-serverless-express@3.3.8:
-  version "3.3.8"
-  resolved "https://registry.yarnpkg.com/aws-serverless-express/-/aws-serverless-express-3.3.8.tgz#8c05e0ce3651fc277725c6d2e1b8f8a36dbe4f4b"
-  integrity sha512-2TQdF5EhxnAtGeEi+wSi2M3xCfpiemuImnpU7HKih3onH0izJ/G2tkM+gwcGHZEsW/gLWFl/JjQAYGa3fILfvw==
+aws-serverless-express@3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/aws-serverless-express/-/aws-serverless-express-3.4.0.tgz#74153b8cc80dbd2c6a32a51e6d353a325c2710d7"
+  integrity sha512-YG9ZjAOI9OpwqDDWzkRc3kKJYJuR7gTMjLa3kAWopO17myoprxskCUyCEee+RKe34tcR4UNrVtgAwW5yDe74bw==
   dependencies:
+    "@vendia/serverless-express" "^3.4.0"
     binary-case "^1.0.0"
     type-is "^1.6.16"
 

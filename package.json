@@ -14,7 +14,7 @@
   "dependencies": {
     "@tsed/ajv": "^6.19.0",
     "@tsed/common": "^6.19.0",
-    "@tsed/core": "^6.19.0",
+    "@tsed/core": "^6.20.1",
     "@tsed/di": "^6.19.0",
     "@tsed/exceptions": "^6.19.0",
     "@tsed/json-mapper": "^6.19.0",

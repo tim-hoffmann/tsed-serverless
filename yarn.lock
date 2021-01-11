@@ -1297,10 +1297,19 @@
     tslib "2.0.1"
     uuid "8.3.2"
 
-"@tsed/core@6.19.0", "@tsed/core@^6.19.0":
+"@tsed/core@6.19.0":
   version "6.19.0"
   resolved "https://registry.yarnpkg.com/@tsed/core/-/core-6.19.0.tgz#53d5165f90b80470f94d574de65bc02c903c126c"
   integrity sha512-D1IgMu2EPHw/VQ4gwIQQlw6Hgise9y9jQdsUs0aDD2X831RzZq8cRiq3G1/nbgklPZB/e9IAUEicBYNHxz5usg==
+  dependencies:
+    reflect-metadata "^0.1.13"
+    source-map-support "0.5.19"
+    tslib "2.0.1"
+
+"@tsed/core@^6.20.1":
+  version "6.20.1"
+  resolved "https://registry.yarnpkg.com/@tsed/core/-/core-6.20.1.tgz#4a763fb8317003b15fe79f99f6e18476bf6ef512"
+  integrity sha512-bJ8waegSTAGF0sakwaMRvDLwRjgx9l09g8jLPllBypHBuZKtqFR6x2bDOylFmgjusUzqBgygkkW+5qaPXIw0xQ==
   dependencies:
     reflect-metadata "^0.1.13"
     source-map-support "0.5.19"

@@ -1300,10 +1300,19 @@
     tslib "2.0.1"
     uuid "8.3.2"
 
-"@tsed/core@6.22.1", "@tsed/core@^6.22.1":
+"@tsed/core@6.22.1":
   version "6.22.1"
   resolved "https://registry.yarnpkg.com/@tsed/core/-/core-6.22.1.tgz#582e23e89d5a2b7b46c867543fea18e003002676"
   integrity sha512-qoRop0dutlUtTYqzueUg6tbd0q9h7p9nKTRTEja2MzrvFsTnckwfgF2eD3nIwFxUX3oNfztogOWulh1Oh+WEKA==
+  dependencies:
+    reflect-metadata "^0.1.13"
+    source-map-support "0.5.19"
+    tslib "2.0.1"
+
+"@tsed/core@6.22.2", "@tsed/core@^6.22.1":
+  version "6.22.2"
+  resolved "https://registry.yarnpkg.com/@tsed/core/-/core-6.22.2.tgz#9a95809e647b44071164f9561a90bfda6ef17297"
+  integrity sha512-IvTnJPiPs1xhCwi4oaFgapSq8fK2B/t8u9pt7vwxnDugFmaPJC2LYAA61qotPtZoEaj2W/5sn2JqDxEWwA86jQ==
   dependencies:
     reflect-metadata "^0.1.13"
     source-map-support "0.5.19"
@@ -1350,6 +1359,11 @@
   resolved "https://registry.yarnpkg.com/@tsed/openspec/-/openspec-6.22.1.tgz#d74e449455a982c09d792e834c177f7de30c4ea3"
   integrity sha512-ftaREiEwHMMcDKddmqI5TNoTSo2fFmpDSvCuQuZ6viOFBB1+8IzD3/Z9C03vNCNCD5dUHKttd8P1qHoFh3vDDQ==
 
+"@tsed/openspec@6.22.2":
+  version "6.22.2"
+  resolved "https://registry.yarnpkg.com/@tsed/openspec/-/openspec-6.22.2.tgz#9c5f5f3be99c2a6f779b4b0dbf92a93aac938e4c"
+  integrity sha512-hryR0DDUqVATKzOtxRX5BOT+UEHazWtlWG0AHMs/TLKWgQFZ+cA/lRJTgDbmSCVhTIia9felmLP+nM7saqVeSw==
+
 "@tsed/platform-aws@^6.22.1":
   version "6.22.1"
   resolved "https://registry.yarnpkg.com/@tsed/platform-aws/-/platform-aws-6.22.1.tgz#6600d6b0fc14cd7bab96563595051386e1fc7aa9"
@@ -1366,13 +1380,24 @@
     express "^4.17.1"
     multer "^1.4.2"
 
-"@tsed/schema@6.22.1", "@tsed/schema@^6.22.1":
+"@tsed/schema@6.22.1":
   version "6.22.1"
   resolved "https://registry.yarnpkg.com/@tsed/schema/-/schema-6.22.1.tgz#5b02d819f108dc81adfe6e31fd3f292111e98521"
   integrity sha512-9TkJaav7B61sF2LaMnz8G79w8F2rD/TD/7l/FUqYS5GKuVG2ZlWCzLq67WJZgJTOR3l6u1ZZmVUh05pLl6hvTg==
   dependencies:
     "@tsed/core" "6.22.1"
     "@tsed/openspec" "6.22.1"
+    change-case "4.1.1"
+    micromatch "4.0.2"
+    tslib "2.0.1"
+
+"@tsed/schema@^6.22.2":
+  version "6.22.2"
+  resolved "https://registry.yarnpkg.com/@tsed/schema/-/schema-6.22.2.tgz#808f872757b8c96a33a25debe76f8018a83d4098"
+  integrity sha512-GLtnhPWEFgRsYuOic5fWTDEIIimgQQNpG9nTv4LD+k1TVGCv9gjS6xamXMgCVg4bQUGPQqZ2v7gDg6hHtATO3w==
+  dependencies:
+    "@tsed/core" "6.22.2"
+    "@tsed/openspec" "6.22.2"
     change-case "4.1.1"
     micromatch "4.0.2"
     tslib "2.0.1"

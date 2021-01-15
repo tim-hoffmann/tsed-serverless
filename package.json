@@ -15,7 +15,7 @@
     "@tsed/ajv": "^6.22.1",
     "@tsed/common": "^6.22.1",
     "@tsed/core": "^6.22.1",
-    "@tsed/di": "^6.22.1",
+    "@tsed/di": "^6.22.2",
     "@tsed/exceptions": "^6.22.1",
     "@tsed/json-mapper": "^6.22.1",
     "@tsed/platform-aws": "^6.22.1",

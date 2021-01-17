@@ -8,6 +8,7 @@ import methodOverride from "method-override";
 import cors from "cors";
 import "@tsed/ajv";
 import { HelloWorldController } from "../controllers/HelloWorldController";
+import "@tsed/swagger";
 
 export const rootDir = __dirname;
 
@@ -23,6 +24,7 @@ export const rootDir = __dirname;
   ajv: {
     allErrors: true,
   },
+  swagger: [{ path: "/docs", specVersion: "2.0" }],
 })
 export class Server {
   @Inject()

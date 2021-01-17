@@ -1,25 +1,25 @@
-import { Configuration, Inject } from '@tsed/di';
-import { PlatformApplication } from '@tsed/common';
-import '@tsed/platform-express'; // /!\ keep this import
-import bodyParser from 'body-parser';
-import compress from 'compression';
-import cookieParser from 'cookie-parser';
-import methodOverride from 'method-override';
-import cors from 'cors';
-import '@tsed/ajv';
-import { HelloWorldController } from '../controllers/HelloWorldController';
+import { Configuration, Inject } from "@tsed/di";
+import { PlatformApplication } from "@tsed/common";
+import "@tsed/platform-express"; // /!\ keep this import
+import bodyParser from "body-parser";
+import compress from "compression";
+import cookieParser from "cookie-parser";
+import methodOverride from "method-override";
+import cors from "cors";
+import "@tsed/ajv";
+import { HelloWorldController } from "../controllers/HelloWorldController";
 
 export const rootDir = __dirname;
 
 @Configuration({
   rootDir,
-  acceptMimes: ['application/json'],
-  httpPort: process.env.PORT || 8083,
+  acceptMimes: ["application/json"],
+  httpPort: process.env.PORT || 3000,
   httpsPort: false, // CHANGE
   mount: {
-    "/rest": [HelloWorldController]
+    "/rest": [HelloWorldController],
   },
-  exclude: ['**/*.spec.ts'],
+  exclude: ["**/*.spec.ts"],
   ajv: {
     allErrors: true,
   },

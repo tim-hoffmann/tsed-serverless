@@ -19,7 +19,7 @@
     "@tsed/di": "^6.23.0",
     "@tsed/exceptions": "^6.23.0",
     "@tsed/json-mapper": "^6.23.0",
-    "@tsed/platform-aws": "^6.23.0",
+    "@tsed/platform-aws": "^6.23.2",
     "@tsed/platform-express": "^6.23.0",
     "@tsed/schema": "^6.23.0",
     "ajv": "^7.0.3",

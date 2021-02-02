@@ -1591,7 +1591,7 @@
     tslib "2.0.1"
     uuid "8.3.2"
 
-"@tsed/core@6.23.0", "@tsed/core@^6.23.0":
+"@tsed/core@6.23.0":
   version "6.23.0"
   resolved "https://registry.yarnpkg.com/@tsed/core/-/core-6.23.0.tgz#362e1f5e65ddbb546a6a0e4bb504715f7a20a538"
   integrity sha512-hEJ0TTUdpADPl8dPnBVEBxOU4nBCtkjyMRpCvEEvk4VoyNeQNqJBZVJNGhAlZk3gnJLl9LAI6EiiKSH/8alQbw==
@@ -1600,12 +1600,31 @@
     source-map-support "0.5.19"
     tslib "2.0.1"
 
-"@tsed/di@6.23.0", "@tsed/di@^6.23.0":
+"@tsed/core@6.24.0", "@tsed/core@^6.23.0":
+  version "6.24.0"
+  resolved "https://registry.yarnpkg.com/@tsed/core/-/core-6.24.0.tgz#d2093d595579a5e1a73ca90dc1b2429674961bdd"
+  integrity sha512-jGp9CoxAXkATgZnntTQy5rrmFQ5cvsHaWEYa4eN7unpcxJw9X4tFrXSlhkELBnAxrrLns26U/QJUfcexZZR2bg==
+  dependencies:
+    normalize-path "3.0.0"
+    reflect-metadata "^0.1.13"
+    source-map-support "0.5.19"
+    tslib "2.0.1"
+
+"@tsed/di@6.23.0":
   version "6.23.0"
   resolved "https://registry.yarnpkg.com/@tsed/di/-/di-6.23.0.tgz#b68faa3719b81c8ca9ea5f7d5eafd6939b27e40e"
   integrity sha512-MgwmJZTG5RGzwl6e5AWo0FOTvy2cxxWy97M9UaJX+xPBpVZ3wgrV0ZT2lLnQaWr/DxRch5RyCEjGAnUQv4Xa5A==
   dependencies:
     "@tsed/core" "6.23.0"
+    chalk "4.1.0"
+    tslib "2.0.1"
+
+"@tsed/di@^6.24.0":
+  version "6.24.0"
+  resolved "https://registry.yarnpkg.com/@tsed/di/-/di-6.24.0.tgz#812a49cd65b95117a794551cae1b1f16d2b32eb2"
+  integrity sha512-L6m2DnJkuLusFKovy6WvxPtK++yJAdKbQ/42HSQvklBNhMywUcfDcU3OhZY4FTHWc5pBcAIp5cWBssqtRT9+IA==
+  dependencies:
+    "@tsed/core" "6.24.0"
     chalk "4.1.0"
     tslib "2.0.1"
 

@@ -1591,11 +1591,21 @@
     tslib "2.0.1"
     uuid "8.3.2"
 
-"@tsed/core@6.23.0", "@tsed/core@^6.23.0":
+"@tsed/core@6.23.0":
   version "6.23.0"
   resolved "https://registry.yarnpkg.com/@tsed/core/-/core-6.23.0.tgz#362e1f5e65ddbb546a6a0e4bb504715f7a20a538"
   integrity sha512-hEJ0TTUdpADPl8dPnBVEBxOU4nBCtkjyMRpCvEEvk4VoyNeQNqJBZVJNGhAlZk3gnJLl9LAI6EiiKSH/8alQbw==
   dependencies:
+    reflect-metadata "^0.1.13"
+    source-map-support "0.5.19"
+    tslib "2.0.1"
+
+"@tsed/core@6.24.1", "@tsed/core@^6.23.0":
+  version "6.24.1"
+  resolved "https://registry.yarnpkg.com/@tsed/core/-/core-6.24.1.tgz#33031865adf9f9d9b7fe4500311b35d75dff279b"
+  integrity sha512-M5Ls61dSwp8kocDWxNbdSUk5A2Yzw47jJtbi6TSasEU0+vzn2rKviB6BK1uA4XJoAdLNX8t1pbg8EjRujX+9dA==
+  dependencies:
+    normalize-path "3.0.0"
     reflect-metadata "^0.1.13"
     source-map-support "0.5.19"
     tslib "2.0.1"
@@ -1617,12 +1627,20 @@
     "@tsed/schema" "6.23.0"
     tslib "2.0.1"
 
-"@tsed/json-mapper@6.23.0", "@tsed/json-mapper@^6.23.0":
+"@tsed/json-mapper@6.23.0":
   version "6.23.0"
   resolved "https://registry.yarnpkg.com/@tsed/json-mapper/-/json-mapper-6.23.0.tgz#505a78f7f25dbfe2da5e453b24471025c2819833"
   integrity sha512-d5yOBrmnHUtTKfID0pG4gx3frMBWv73sJL5lpRlPIHwi91UQYAZQKcl0lTUx5dEPKaddMo43SpY1lTzy9wda0Q==
   dependencies:
     "@tsed/core" "6.23.0"
+    tslib "2.0.1"
+
+"@tsed/json-mapper@^6.24.1":
+  version "6.24.1"
+  resolved "https://registry.yarnpkg.com/@tsed/json-mapper/-/json-mapper-6.24.1.tgz#6f5e9c37b0624c281cd1ba492ff6d7c20f6b9ef8"
+  integrity sha512-a5PfaIv5/I5aa3H1d3GyXFgRz7RKtZ6WCUJCxz24I1R0yabR6yo9KIK0BnoUtD0rn2Lo4PVAYZVHWGLwCIdMPg==
+  dependencies:
+    "@tsed/core" "6.24.1"
     tslib "2.0.1"
 
 "@tsed/logger@^5.5.4":

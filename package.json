@@ -18,7 +18,7 @@
     "@tsed/core": "^6.24.2",
     "@tsed/di": "^6.24.2",
     "@tsed/exceptions": "^6.24.2",
-    "@tsed/json-mapper": "^6.24.2",
+    "@tsed/json-mapper": "^6.26.4",
     "@tsed/platform-aws": "^6.24.2",
     "@tsed/platform-express": "^6.24.2",
     "@tsed/schema": "^6.24.2",

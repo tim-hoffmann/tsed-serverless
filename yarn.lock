@@ -1617,10 +1617,10 @@
     request "^2.88.0"
     request-promise-native "^1.0.8"
 
-"@tsed/ajv@^6.24.2":
-  version "6.24.2"
-  resolved "https://registry.yarnpkg.com/@tsed/ajv/-/ajv-6.24.2.tgz#031538e04f5ea97a9b406ffb013ab1f5ebc05279"
-  integrity sha512-GVCj//hvtwvavJBjr1TNhA4EFyb+8BNupVHuHchqdlQxmwlYe4TAqZFsnCYLLdWRFaf0t/T8gV92iVbu6PwVzw==
+"@tsed/ajv@^6.30.1":
+  version "6.30.1"
+  resolved "https://registry.yarnpkg.com/@tsed/ajv/-/ajv-6.30.1.tgz#f3e757c27c2cb67a3370a40d1ec071a8fc4a34dc"
+  integrity sha512-QGW9GTIkP0jyAk6/inj6w3D0ufnecTxK9fOdlhjZlVJLDWH+vNMEZA/T7gYYrYLwrvXLtZDdMJl9whPC8BFgcg==
   dependencies:
     ajv-formats "1.5.1"
     tslib "2.0.1"

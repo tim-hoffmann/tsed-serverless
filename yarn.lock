@@ -1787,10 +1787,10 @@
     "@types/aws-serverless-express" "^3.3.3"
     aws-serverless-express "3.4.0"
 
-"@tsed/platform-express@^6.33.1":
-  version "6.33.1"
-  resolved "https://registry.yarnpkg.com/@tsed/platform-express/-/platform-express-6.33.1.tgz#91dc2feaa1b676790d9cec327fd6823449a32199"
-  integrity sha512-uMlu3QyGT88WRSeG+ZSyQ2al4wzByq2b+WK72aqgl6guhp3BowRkOooITNrv9x2avCiOF5rk46WoyKlSv5HFbQ==
+"@tsed/platform-express@^6.34.1":
+  version "6.34.1"
+  resolved "https://registry.yarnpkg.com/@tsed/platform-express/-/platform-express-6.34.1.tgz#a98f22d510a73a8493c5910617505c2f7b9c5ec1"
+  integrity sha512-QIfD0X/03/5cDM6mAh9F/6kv1E8Fg56HTkkDZbn0HjSZTLV1jxwEYPYTsCL8ZyMaZszyD6i/PMv+GM2497/PbA==
   dependencies:
     express "^4.17.1"
     multer "^1.4.2"

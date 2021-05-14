@@ -50,7 +50,7 @@
     "babel-plugin-transform-typescript-metadata": "^0.3.1",
     "concurrently": "^6.0.0",
     "nodemon": "^2.0.7",
-    "serverless": "^2.22.0",
+    "serverless": "^2.41.2",
     "serverless-offline": "^6.8.0",
     "serverless-webpack": "^5.3.5",
     "ts-node": "^9.1.1",

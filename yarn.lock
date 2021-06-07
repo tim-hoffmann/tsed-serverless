@@ -1727,7 +1727,7 @@
     tslib "2.0.1"
     uuid "8.3.2"
 
-"@tsed/core@6.33.1", "@tsed/core@^6.33.1":
+"@tsed/core@6.33.1":
   version "6.33.1"
   resolved "https://registry.yarnpkg.com/@tsed/core/-/core-6.33.1.tgz#09feb2fa023d372d129ecb004f3456b95ffad49e"
   integrity sha512-AXh3YM7OurdepHYJnC6sNc4gLRJX4UFJGr1RYMo2r8PBk+8h0VRnYkL/mtSu2InVFfk+SnXbd8eu9gw3axkNfg==
@@ -1736,6 +1736,16 @@
     reflect-metadata "^0.1.13"
     source-map-support "0.5.19"
     tslib "2.0.1"
+
+"@tsed/core@6.54.0", "@tsed/core@^6.33.1":
+  version "6.54.0"
+  resolved "https://registry.yarnpkg.com/@tsed/core/-/core-6.54.0.tgz#4489904e9e2aaf2d9c77cbb9a7508665cb4f066d"
+  integrity sha512-P0fgSRxN2gUqW+7JPS7aQsOc4eNriUcejoV5KCAYi47DbPdLKX5suckTkuk3d9seuU0zkPvHlH32JHvAJB9Cdw==
+  dependencies:
+    normalize-path "3.0.0"
+    reflect-metadata "^0.1.13"
+    source-map-support "0.5.19"
+    tslib "2.1.0"
 
 "@tsed/di@6.33.1", "@tsed/di@^6.33.1":
   version "6.33.1"
@@ -1779,6 +1789,11 @@
   resolved "https://registry.yarnpkg.com/@tsed/openspec/-/openspec-6.33.1.tgz#83e0f3cf9cde5ad1785d5dcc9a1d6d93fd7aa072"
   integrity sha512-fAi4ANW+YeT9C12IlXFInTJjxoNH4KuawWGj9KEplP3FCGAP++MfjXrvBoRZwBjnERTEq68BTLXAP/fCa5trCg==
 
+"@tsed/openspec@6.54.0":
+  version "6.54.0"
+  resolved "https://registry.yarnpkg.com/@tsed/openspec/-/openspec-6.54.0.tgz#c3028927da8c54e5af0209747602235755f38f8b"
+  integrity sha512-kntAWSw/5v9jfyndwxTvK8BoO9t+qT3Bw7nX85bJW9BXjUsqHrMn/WN8NDlhEebsfu5ResN2OOJGZmwgSxk/Yg==
+
 "@tsed/platform-aws@^6.33.1":
   version "6.33.1"
   resolved "https://registry.yarnpkg.com/@tsed/platform-aws/-/platform-aws-6.33.1.tgz#5bc6c61c173e1466cf070a439f92f978556af8ba"
@@ -1795,7 +1810,7 @@
     express "^4.17.1"
     multer "^1.4.2"
 
-"@tsed/schema@6.33.1", "@tsed/schema@^6.33.1":
+"@tsed/schema@6.33.1":
   version "6.33.1"
   resolved "https://registry.yarnpkg.com/@tsed/schema/-/schema-6.33.1.tgz#41bf0588ba5d5b53ce52cb4f86c6094eb1da19c8"
   integrity sha512-LoZNIkN+/kP0LvDjjnRb1BQ2Dnp3NQHxn44ZtD0yC5DM4Hul0O2BHDD7SZtwVA1QYuc3sobBoGT7FCE0CptDdQ==
@@ -1805,6 +1820,17 @@
     change-case "4.1.1"
     micromatch "4.0.2"
     tslib "2.0.1"
+
+"@tsed/schema@^6.54.0":
+  version "6.54.0"
+  resolved "https://registry.yarnpkg.com/@tsed/schema/-/schema-6.54.0.tgz#e3799b954a0e42f725df49aa61d8bc7c2bf3a6fb"
+  integrity sha512-BcZmduUm+Sbg8//ndLOmTA0oJQr/XxlFvJXAgLb43Zo/UOAKkckhoLdVBylmb5UiAIsbLMIzTP8e29LJc76trA==
+  dependencies:
+    "@tsed/core" "6.54.0"
+    "@tsed/openspec" "6.54.0"
+    change-case "4.1.2"
+    micromatch "4.0.2"
+    tslib "2.1.0"
 
 "@types/aws-lambda@*":
   version "8.10.68"
@@ -3028,7 +3054,7 @@ call-bind@^1.0.0:
     function-bind "^1.1.1"
     get-intrinsic "^1.0.0"
 
-camel-case@^4.1.1:
+camel-case@^4.1.1, camel-case@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/camel-case/-/camel-case-4.1.2.tgz#9728072a954f805228225a6deea6b38461e1bd5a"
   integrity sha512-gxGWBrTT1JuMx6R+o5PTXMmUnhnVzLQ9SNutD4YqKtI6ap897t3tKECYla6gCWEkplXnlNybEkZg9GEGxKFCgw==
@@ -3119,6 +3145,24 @@ change-case@4.1.1:
     sentence-case "^3.0.3"
     snake-case "^3.0.3"
     tslib "^1.10.0"
+
+change-case@4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/change-case/-/change-case-4.1.2.tgz#fedfc5f136045e2398c0410ee441f95704641e12"
+  integrity sha512-bSxY2ws9OtviILG1EiY5K7NNxkqg/JnRnFxLtKQ96JaviiIxi7djMrSd0ECT9AC+lttClmYwKw53BWpOMblo7A==
+  dependencies:
+    camel-case "^4.1.2"
+    capital-case "^1.0.4"
+    constant-case "^3.0.4"
+    dot-case "^3.0.4"
+    header-case "^2.0.4"
+    no-case "^3.0.4"
+    param-case "^3.0.4"
+    pascal-case "^3.1.2"
+    path-case "^3.0.4"
+    sentence-case "^3.0.4"
+    snake-case "^3.0.4"
+    tslib "^2.0.3"
 
 chardet@^0.7.0:
   version "0.7.0"
@@ -3476,7 +3520,7 @@ consolidate@^0.16.0:
   dependencies:
     bluebird "^3.7.2"
 
-constant-case@^3.0.3:
+constant-case@^3.0.3, constant-case@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/constant-case/-/constant-case-3.0.4.tgz#3b84a9aeaf4cf31ec45e6bf5de91bdfb0589faf1"
   integrity sha512-I2hSBi7Vvs7BEuJDr5dDHfzb/Ruj3FyvFyh7KLilAjNQw3Be+xgqUBA2W6scVEcL0hL1dwPRtIqEPVUCKkSsyQ==
@@ -5098,7 +5142,7 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
-header-case@^2.0.3:
+header-case@^2.0.3, header-case@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/header-case/-/header-case-2.0.4.tgz#5a42e63b55177349cf405beb8d775acabb92c063"
   integrity sha512-H/vuk5TEEVZwrR0lp2zed9OCo1uAILMlx0JEMgC26rzyJJ3N1v6XkwHHXJQdR2doSjcGPM6OKPYoJgf0plJ11Q==
@@ -6996,7 +7040,7 @@ pako@~1.0.2:
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
   integrity sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
 
-param-case@^3.0.3:
+param-case@^3.0.3, param-case@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/param-case/-/param-case-3.0.4.tgz#7d17fe4aa12bde34d4a77d91acfb6219caad01c5"
   integrity sha512-RXlj7zCYokReqWpOPH9oYivUzLYZ5vAPIfEmCTNViosC78F8F0H9y7T7gG2M39ymgutxF5gcFEsyZQSph9Bp3A==
@@ -7047,7 +7091,7 @@ pascalcase@^0.1.1:
   resolved "https://registry.yarnpkg.com/pascalcase/-/pascalcase-0.1.1.tgz#b363e55e8006ca6fe21784d2db22bd15d7917f14"
   integrity sha1-s2PlXoAGym/iF4TS2yK9FdeRfxQ=
 
-path-case@^3.0.3:
+path-case@^3.0.3, path-case@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/path-case/-/path-case-3.0.4.tgz#9168645334eb942658375c56f80b4c0cb5f82c6f"
   integrity sha512-qO4qCFjXqVTrcbPt/hQfhTQ+VhFsqNKOPtytgNKkKxSoEp3XPUQ8ObFuePylOIok5gjn69ry8XiULxCwot3Wfg==
@@ -7853,7 +7897,7 @@ send@0.17.1:
     range-parser "~1.2.1"
     statuses "~1.5.0"
 
-sentence-case@^3.0.3:
+sentence-case@^3.0.3, sentence-case@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/sentence-case/-/sentence-case-3.0.4.tgz#3645a7b8c117c787fde8702056225bb62a45131f"
   integrity sha512-8LS0JInaQMCRoQ7YUytAo/xUu5W2XnQxV2HI/6uM6U7CITS1RqPElr30V6uIqyMKM9lJGRVFy5/4CuzcixNYSg==
@@ -8093,7 +8137,7 @@ slash@^3.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
-snake-case@^3.0.3:
+snake-case@^3.0.3, snake-case@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/snake-case/-/snake-case-3.0.4.tgz#4f2bbd568e9935abdfd593f34c691dadb49c452c"
   integrity sha512-LAOh4z89bGQvl9pFfNF8V146i7o7/CqFPbqzYgP+yYzDIDeS9HaNFtXABamRW+AQzEVODcvE79ljJ+8a9YSdMg==
@@ -8765,7 +8809,7 @@ tslib@2.0.1:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.1.tgz#410eb0d113e5b6356490eec749603725b021b43e"
   integrity sha512-SgIkNheinmEBgx1IUNirK0TUD4X9yjjBRTqqjggWCU3pUEqIk3/Uwl3yRixYKT6WjQuGiwDv4NomL3wqRCj+CQ==
 
-tslib@2.1.0:
+tslib@2.1.0, tslib@^2.0.3:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
   integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
@@ -8774,11 +8818,6 @@ tslib@^1.10.0, tslib@^1.9.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
-
-tslib@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.3.tgz#8e0741ac45fc0c226e58a17bfc3e64b9bc6ca61c"
-  integrity sha512-uZtkfKblCEQtZKBF6EBXVZeQNl82yqtDQdv+eck8u7tdPxjLu2/lp5/uPW+um2tpuxINHWy3GhiccY7QgEaVHQ==
 
 tunnel-agent@^0.6.0:
   version "0.6.0"

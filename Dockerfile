@@ -9,11 +9,12 @@
 ##                                                                           ##
 ## description     : Dockerfile for TsED Application                         ##
 ## author          : TsED team                                               ##
-## date            : 20190820                                                ##
-## version         : 1.0                                                     ##
+## date            : 2021-04-14                                              ##
+## version         : 1.1                                                     ##
+##                                                                           ##
 ###############################################################################
 ###############################################################################
-FROM node:12.13.0-alpine
+FROM node:14-alpine
 
 RUN apk update && apk add build-base git python
 
@@ -21,8 +22,7 @@ COPY package.json .
 COPY yarn.lock .
 COPY ./src ./src
 COPY ./dist ./dist
-COPY ./resources ./resources
-COPY ./spec ./spec
+COPY ./views ./views
 
 RUN yarn install --production
 

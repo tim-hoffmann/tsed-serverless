@@ -1,5 +1,5 @@
-import { Configuration, Inject } from "@tsed/di";
-import { PlatformApplication } from "@tsed/common";
+import {Configuration, Inject} from "@tsed/di";
+import {PlatformApplication} from "@tsed/common";
 import "@tsed/platform-express"; // /!\ keep this import
 import bodyParser from "body-parser";
 import compress from "compression";
@@ -7,22 +7,31 @@ import cookieParser from "cookie-parser";
 import methodOverride from "method-override";
 import cors from "cors";
 import "@tsed/ajv";
-import { HelloWorldController } from "../controllers/HelloWorldController";
-
-export const rootDir = __dirname;
+import "@tsed/swagger";
+import {config, rootDir} from "./config";
+import {IndexCtrl} from "./controllers/pages/IndexController";
+import {HelloWorldController} from "./controllers/HelloWorldController";
 
 @Configuration({
-  rootDir,
+  ...config,
   acceptMimes: ["application/json"],
-  httpPort: process.env.PORT || 3000,
-  httpsPort: false, // CHANGE
   mount: {
     "/rest": [HelloWorldController],
+    "/": [IndexCtrl]
   },
-  exclude: ["**/*.spec.ts"],
-  ajv: {
-    allErrors: true,
+  swagger: [
+    {
+      path: "/v3/docs",
+      specVersion: "3.0.1"
+    }
+  ],
+  views: {
+    root: `${rootDir}/views`,
+    extensions: {
+      ejs: "ejs"
+    }
   },
+  exclude: ["**/*.spec.ts"]
 })
 export class Server {
   @Inject()
@@ -40,7 +49,7 @@ export class Server {
       .use(bodyParser.json())
       .use(
         bodyParser.urlencoded({
-          extended: true,
+          extended: true
         })
       );
   }

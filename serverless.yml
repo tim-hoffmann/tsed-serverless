@@ -1,45 +1,39 @@
 service: tsed-serverless
 
-plugins:
-  - serverless-webpack
-  - serverless-offline
+frameworkVersion: "2"
 
 provider:
   name: aws
-  runtime: nodejs12.x
+  runtime: nodejs14.x
+  lambdaHashingVersion: "20201221"
   region: eu-central-1
-  stage: ${opt:stage, 'dev'}
   logRetentionInDays: 14
   tracing:
     apiGateway: true
     lambda: true
-  environment:
-    STAGE: ${self:provider.stage}
-  apiGateway:
-    shouldStartNameWithService: true
+
+plugins:
+  - serverless-offline
+  - serverless-hooks
 
 functions:
-  httpHandler:
-    handler: src/handlers/apiGateway/ApiGatewayHandler.handler
+  any:
+    handler: dist/handlers/httpHandler.handler
     events:
       - http:
-          method: any
-          path: /{proxy+}
-          cors: true
-      - http:
-          method: any
+          method: ANY
           path: /
-          cors: true
+      - http:
+          method: ANY
+          path: "{proxy+}"
+
+package:
+  patterns:
+    - "!*"
+    - "!*/**"
+    - "dist/**"
+    - "node_modules/**"
 
 custom:
-  webpack:
-    webpackConfig: webpack.sls.config.js
-    includeModules:
-      forceExclude:
-        - aws-sdk
-        - '@types/multer'
-    packager: yarn
-    keepOutputDirectory: true
-    individually: true
   serverless-offline:
     noPrependStageInUrl: true

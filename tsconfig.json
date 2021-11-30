@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "module": "commonjs",
     "target": "esnext",
     "sourceMap": true,
@@ -22,7 +23,7 @@
     "lib": [
       "es7",
       "dom",
-      "esnext.asynciterable"
+      "ESNext.AsyncIterable"
     ],
     "typeRoots": [
       "./node_modules/@types"

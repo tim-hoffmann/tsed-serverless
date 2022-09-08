@@ -1727,7 +1727,7 @@
     tslib "2.0.1"
     uuid "8.3.2"
 
-"@tsed/core@6.33.1", "@tsed/core@^6.33.1":
+"@tsed/core@6.33.1":
   version "6.33.1"
   resolved "https://registry.yarnpkg.com/@tsed/core/-/core-6.33.1.tgz#09feb2fa023d372d129ecb004f3456b95ffad49e"
   integrity sha512-AXh3YM7OurdepHYJnC6sNc4gLRJX4UFJGr1RYMo2r8PBk+8h0VRnYkL/mtSu2InVFfk+SnXbd8eu9gw3axkNfg==
@@ -1736,6 +1736,14 @@
     reflect-metadata "^0.1.13"
     source-map-support "0.5.19"
     tslib "2.0.1"
+
+"@tsed/core@^6.131.0":
+  version "6.131.0"
+  resolved "https://registry.yarnpkg.com/@tsed/core/-/core-6.131.0.tgz#3f149d6c79e61adab30efe92b6fdff2e19199198"
+  integrity sha512-P3ga2ppzYCyr0JUnjLAsmQxtraC+5JA/DFjE2BcLQHJdfc/b8CouXEbl3zxDogh9f1SWjT1cG+0v0Szl64GaOw==
+  dependencies:
+    reflect-metadata "^0.1.13"
+    tslib "2.4.0"
 
 "@tsed/di@6.33.1", "@tsed/di@^6.33.1":
   version "6.33.1"
@@ -8770,15 +8778,15 @@ tslib@2.1.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
   integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
 
+tslib@2.4.0, tslib@^2.0.3:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
+  integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
+
 tslib@^1.10.0, tslib@^1.9.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
-
-tslib@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.3.tgz#8e0741ac45fc0c226e58a17bfc3e64b9bc6ca61c"
-  integrity sha512-uZtkfKblCEQtZKBF6EBXVZeQNl82yqtDQdv+eck8u7tdPxjLu2/lp5/uPW+um2tpuxINHWy3GhiccY7QgEaVHQ==
 
 tunnel-agent@^0.6.0:
   version "0.6.0"
